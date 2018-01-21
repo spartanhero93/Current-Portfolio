@@ -1,9 +1,16 @@
+html {
+  height: 100%;
+}
+
 body {
   font-family: 'Open-sans', sans-serif;
   font-size: 17px;
   line-height: 1.5em;
   margin: 0;
   padding: 0;
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
 }
 
 img {
@@ -12,6 +19,11 @@ img {
 
 .container {
   margin: auto;
+}
+
+section {
+  /* flex: 1; would be enough but it looks bad in IE */
+  flex: 1 0 auto;
 }
 
 /* COMMON CLASSES */
@@ -28,6 +40,14 @@ img {
 
 #main-header {
   border-bottom: 1px solid #56a79a;
+}
+
+#main-header a {
+  text-decoration: none;
+  color: #888;
+}
+#main-header h1:hover {
+  text-decoration: underline;
 }
 
 /* NAVBAR */
@@ -101,6 +121,10 @@ img {
 #features .fa {
   font-size: 60px;
   color: #56a79a;
+}
+
+#features a {
+  text-decoration: none;
 }
 
 /* SKILLS */
@@ -185,7 +209,7 @@ img {
   color: #fff;
 }
 
-.about form label{
+.about form label {
   text-transform: uppercase;
 }
 
@@ -194,6 +218,12 @@ img {
 @media (max-width: 800px) {
   #showcase h1 {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 770px) {
+  #personal {
+    text-align: center;
   }
 }
 
