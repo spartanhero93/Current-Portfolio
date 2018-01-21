@@ -181,36 +181,8 @@ section {
 #page {
   margin-bottom: 40px;
 }
-
-/* CONTACT */
-
-.about form {
-  background: #333;
-  color: #fff;
+#page p {
   padding: 20px;
-}
-
-.about form input[type='text'] {
-  width: 50%;
-  height: 30px;
-  margin-bottom: 10px;
-}
-
-.about form textarea {
-  width: 50%;
-  height: 100px;
-}
-
-.about form button {
-  width: 50%;
-  padding: 10px 0;
-  border: 0;
-  background: #222;
-  color: #fff;
-}
-
-.about form label {
-  text-transform: uppercase;
 }
 
 /* MEDIA QUERIES */
