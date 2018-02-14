@@ -1,8 +1,4 @@
-html {
-  height: 100%;
-}
-
-body {
+html, body {
   font-family: 'Open-sans', sans-serif;
   font-size: 17px;
   line-height: 1.5em;
@@ -11,6 +7,8 @@ body {
   display: flex;
   min-height: 100%;
   flex-direction: column;
+  background-color: #F5F4EB;
+  height: 100%;
 }
 
 img {
@@ -19,6 +17,7 @@ img {
 
 .container {
   margin: auto;
+  min-height: 100%;
 }
 
 section {
@@ -46,8 +45,15 @@ section {
   text-decoration: none;
   color: #888;
 }
+
 #main-header h1:hover {
   text-decoration: underline;
+}
+
+/* FOOTER */
+
+#main-footer {
+  
 }
 
 /* NAVBAR */
@@ -99,7 +105,7 @@ section {
 #showcase .showcase-content {
   background: #333;
   color: #fff;
-  border-radius: 90px;
+  border-radius: 60px;
   padding: 40px;
   opacity: 0.92;
 }
@@ -116,6 +122,7 @@ section {
   color: #888;
   margin: 0;
   margin-bottom: 40px;
+  padding: 10px;
 }
 
 #features .fa {
@@ -124,9 +131,13 @@ section {
 }
 
 #features a {
+  color: #56a79a;
   text-decoration: none;
 }
 
+#features a:hover {
+  text-decoration: underline;
+}
 /* SKILLS */
 
 #skills {
@@ -137,7 +148,8 @@ section {
 #skills h2 {
   font-size: 35px;
   margin: 0;
-  padding-bottom: 10px;
+  padding-bottom: 5%;
+  padding-top: 5%;
 }
 
 #skills ul {
@@ -148,6 +160,11 @@ section {
 #skills li {
   line-height: 2em;
   font-size: 20px;
+}
+
+#skills img {
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 /* PERSONAL INFO */
@@ -161,12 +178,17 @@ section {
 #personal h4 {
   text-transform: uppercase;
   margin-bottom: 0;
+  padding: 20px;
 }
 
 #personal ul {
   padding: 0;
   list-style: none;
   line-height: 2em;
+}
+
+#personal p {
+  padding: 20px;
 }
 
 /* FOOTER */
@@ -182,35 +204,8 @@ section {
   margin-bottom: 40px;
 }
 
-/* CONTACT */
-
-.about form {
-  background: #333;
-  color: #fff;
+#page p {
   padding: 20px;
-}
-
-.about form input[type='text'] {
-  width: 50%;
-  height: 30px;
-  margin-bottom: 10px;
-}
-
-.about form textarea {
-  width: 50%;
-  height: 100px;
-}
-
-.about form button {
-  width: 50%;
-  padding: 10px 0;
-  border: 0;
-  background: #222;
-  color: #fff;
-}
-
-.about form label {
-  text-transform: uppercase;
 }
 
 /* MEDIA QUERIES */
@@ -229,6 +224,6 @@ section {
 
 @media (max-width: 500px) {
   #showcase .showcase-content {
-    padding: 40px 10px;
+    padding: 20px 20px;
   }
 }
