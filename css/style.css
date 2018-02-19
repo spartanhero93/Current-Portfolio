@@ -7,7 +7,7 @@ html, body {
   display: flex;
   min-height: 100%;
   flex-direction: column;
-  background-color: #F5F4EB;
+  background-color: rgb(241, 241, 241);
   height: 100%;
 }
 
@@ -48,12 +48,6 @@ section {
 
 #main-header h1:hover {
   text-decoration: underline;
-}
-
-/* FOOTER */
-
-#main-footer {
-  
 }
 
 /* NAVBAR */
@@ -138,6 +132,7 @@ section {
 #features a:hover {
   text-decoration: underline;
 }
+
 /* SKILLS */
 
 #skills {
